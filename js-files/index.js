@@ -22,6 +22,7 @@ const find_button = document.getElementById('FINDCITYBUTTON');
             try {
                 let response1 = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`)
                 currentNavigator_LocationData = await response1.json();
+                console.log(currentNavigator_LocationData);
                 displayMoreDayWeather(currentNavigator_LocationData.city);
             } catch (error) { console.log(error); }
         },
@@ -30,7 +31,7 @@ const find_button = document.getElementById('FINDCITYBUTTON');
 //__________________________EVENT SEARCH....________________________________________________
 searchCity.addEventListener('keyup', async function(e_handler) {
     required_City = searchCity.value;
-    // console.log(required_City);
+    console.log(required_City);
     let result_autmatic_search = await searchWeather(required_City);
     console.log(result_autmatic_search);
     if (required_City == "") {

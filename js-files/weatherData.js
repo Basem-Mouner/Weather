@@ -8,7 +8,7 @@ import fillCards, {} from './card_fill.js'
 
 export default async function displayMoreDayWeather(region) {
     try {
-        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=b5d36db7c319496ab2b183513241106&q=${region}&days=3`, {
+        let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b5d36db7c319496ab2b183513241106&q=${region}&days=3`, {
             cache: "no-cache",
         })
         let finalData = await response.json();

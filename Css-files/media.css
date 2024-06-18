@@ -1,0 +1,26 @@
+/* sm*/
+
+@media(min-width:300px) {
+    .diamntion {
+        padding: 0;
+    }
+}
+
+
+/* md */
+
+@media(min-width:768px) {
+    .subscribe {
+        width: 75% !important;
+    }
+}
+
+
+/* lg */
+
+@media(min-width:1024px) {}
+
+
+/* xl */
+
+@media(min-width:1280px) {}

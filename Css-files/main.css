@@ -1,0 +1,190 @@
+:root {
+    --main-color-site: rgb(30, 32, 43);
+    --main-transtion-tima: .4s;
+}
+
+*::selection {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    background-color: var(--main-color-site);
+}
+
+
+/*_________________________________________ */
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.diamntion {
+    padding: 0 20px;
+}
+
+.navbar-brand .weatherLable {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-brand .weatherLable small {
+    font-size: 10px;
+}
+
+.nav-item {
+    margin-right: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    background-color: var(--main-color-site);
+    margin: 2px 4px;
+    padding: 2px 50px;
+    line-height: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    border-radius: 50px;
+    transition: all var(--main-transtion-tima)
+}
+
+.nav-item:hover {
+    background-color: rgb(0, 154, 216);
+    transition: all var(--main-transtion-tima)
+}
+
+.nav-item:hover .nav-link {
+    background-color: rgb(36, 41, 42);
+    color: rgb(0, 154, 216);
+}
+
+.navbar-nav .nav-link.active {
+    /* background-color: rgb(36, 41, 42); */
+    color: rgb(0, 154, 216);
+    margin: 2px 4px;
+}
+
+.nav-item .navbar-nav .nav-link.active {
+    background-color: rgb(0, 154, 216);
+}
+
+
+/*_________________________________________ */
+
+.banner {
+    background-image: url(../assests/images/banner.png);
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+}
+
+.banner input,
+footer input {
+    background-color: var(--main-color-site);
+    border: none;
+    color: white;
+}
+
+.banner input:focus,
+footer input:focus {
+    outline: none;
+}
+
+.banner button,
+footer button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: white;
+    background-color: rgb(0, 154, 216);
+    padding: 0px 2rem;
+    border-radius: 50px;
+    height: 75%;
+    border: none;
+    font-size: 18px;
+}
+
+
+/*_________________________________________ */
+
+.weatherCard {
+    background-color: var(--main-color-site);
+}
+
+.weatherCard .container {
+    color: white;
+    position: relative;
+    bottom: 120px;
+}
+
+.card_title_1 {
+    background-color: rgb(30, 32, 42);
+    border-radius: 10px 0 0 0;
+}
+
+.card_title_3 {
+    background-color: rgb(30, 32, 42);
+    border-radius: 0 10px 0 0;
+}
+
+.card_information_1 {
+    background-color: rgb(50, 53, 68);
+    border-radius: 0 0 0 10px;
+    min-height: 380px;
+}
+
+.card_information_2 {
+    background-color: rgb(38, 41, 54);
+    min-height: 380px;
+}
+
+.card_information_3 {
+    background-color: rgb(50, 53, 68);
+    border-radius: 0 0 10px 0;
+    min-height: 380px;
+}
+
+.card_title_2 {
+    background-color: rgb(34, 37, 48);
+}
+
+span img {
+    width: 20px;
+}
+
+
+/* _________________________________- */
+
+footer {
+    background-color: rgb(38, 41, 54);
+}
+
+footer .links a {
+    border-radius: 50%;
+    background-color: var(--main-color-site);
+    padding: 15px;
+    margin-right: 5px;
+}
+
+footer .links i {
+    color: rgb(0, 154, 216);
+}
+
+footer .links a:hover {
+    background-color: rgb(0, 154, 216);
+    i {
+        color: var(--main-color-site);
+    }
+}
+
+
+/* ______________________________________________________ */

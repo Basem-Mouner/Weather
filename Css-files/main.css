@@ -154,17 +154,21 @@ footer button {
 
 .card_title_1 {
     background-color: rgb(30, 32, 42);
-    border-radius: 10px 0 0 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.card_title_2 {
+    background-color: rgb(34, 37, 48);
 }
 
 .card_title_3 {
     background-color: rgb(30, 32, 42);
-    border-radius: 0 10px 0 0;
+    border-radius: 0px;
 }
 
 .card_information_1 {
     background-color: rgb(50, 53, 68);
-    border-radius: 0 0 0 10px;
+    border-radius: 0px;
     min-height: 380px;
 }
 
@@ -175,12 +179,8 @@ footer button {
 
 .card_information_3 {
     background-color: rgb(50, 53, 68);
-    border-radius: 0 0 10px 0;
+    border-radius: 0 0 10px 10px;
     min-height: 380px;
-}
-
-.card_title_2 {
-    background-color: rgb(34, 37, 48);
 }
 
 span img {

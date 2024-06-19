@@ -55,6 +55,18 @@
     .nav-item .navbar-nav .nav-link.active {
         background-color: rgb(0, 154, 216);
     }
+    .card_title_1 {
+        border-radius: 10px 0px 0px 0px !important;
+    }
+    .card_title_3 {
+        border-radius: 0 10px 0 0 !important;
+    }
+    .card_information_1 {
+        border-radius: 0 0 0 10px !important;
+    }
+    .card_information_3 {
+        border-radius: 0 0 10px 0 !important;
+    }
 }
 
 

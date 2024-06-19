@@ -4,6 +4,9 @@
     .diamntion {
         padding: 0;
     }
+    .custum {
+        margin-top: 50px;
+    }
 }
 
 
@@ -18,7 +21,41 @@
 
 /* lg */
 
-@media(min-width:1024px) {}
+@media(min-width:900px) {
+    .nav-item {
+        margin-right: 30px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-link {
+        background-color: var(--main-color-site)!important;
+        margin: 1.5px 2px;
+        padding: 2px 20px!important;
+        line-height: 21px;
+        font-weight: 400;
+        font-size: 14px;
+        color: white;
+        border-radius: 50px!important;
+        border: none !important;
+        transition: all var(--main-transtion-tima)
+    }
+    .nav-item:hover {
+        background-color: rgb(0, 154, 216);
+        transition: all var(--main-transtion-tima)
+    }
+    .nav-item:hover .nav-link {
+        background-color: rgb(36, 41, 42);
+        color: rgb(0, 154, 216);
+    }
+    .navbar-nav .nav-link.active {
+        color: rgb(0, 154, 216);
+    }
+    .nav-item .navbar-nav .nav-link.active {
+        background-color: rgb(0, 154, 216);
+    }
+}
 
 
 /* xl */

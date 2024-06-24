@@ -20,7 +20,8 @@ export default function fillCards(currentLocation, currentDayObject, targetWeath
     } else if (currentDayObject.wind_dir == 'S') {
         wind_dir = 'South'
     } else { wind_dir = currentDayObject.wind_dir }
-
+    let maxTempDay1 = targetWeather[0].day.maxtemp_c;
+    let minTempDay1 = targetWeather[0].day.mintemp_c;
     let maxTempDay2 = targetWeather[1].day.maxtemp_c;
     let minTempDay2 = targetWeather[1].day.mintemp_c;
     let maxTempDay3 = targetWeather[2].day.maxtemp_c;
@@ -46,6 +47,8 @@ export default function fillCards(currentLocation, currentDayObject, targetWeath
     card_information_1.children[0].innerHTML = `${currentLocation.name}`;
     card_information_1.children[1].innerHTML = `${currentDayObject.temp_c}&degC`;
     card_information_1.children[2].setAttribute('src', `https:${currentDayObject.condition.icon}`);
+    card_information_1.children[2].children[1].innerHTML = `HL : ${maxTempDay1}&degC`;
+    card_information_1.children[2].children[2].innerHTML = `ML : ${minTempDay1} &degC`;
     card_information_1.children[3].innerHTML = `${currentDayObject.condition.text}`;
     card_information_1.children[4].children[1].innerHTML = `${currentDayObject.precip_in}%`;
     card_information_1.children[5].children[1].innerHTML = `${currentDayObject.wind_kph}km/h`;
